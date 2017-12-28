@@ -44,6 +44,7 @@ public class MainActivity extends OrmLiteBaseActivity<DatabaseHelper> {
         // get our dao
         RuntimeExceptionDao<SimpleData, Integer> simpleDao = getHelper().getSimpleDataDao();
 
+        final String test = "test";
         long millis = System.currentTimeMillis();
         SimpleData simple = new SimpleData(millis);
 
