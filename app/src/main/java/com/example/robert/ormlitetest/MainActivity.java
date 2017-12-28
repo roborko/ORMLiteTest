@@ -46,6 +46,7 @@ public class MainActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 
         long millis = System.currentTimeMillis();
         SimpleData simple = new SimpleData(millis);
+
         // store it in the database
         simpleDao.create(simple);
         CreateNewUser();
